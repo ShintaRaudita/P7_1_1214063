@@ -1,0 +1,11 @@
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\bin\Debug\P7_1_1214063.exe.config
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\bin\Debug\P7_1_1214063.exe
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\bin\Debug\P7_1_1214063.pdb
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.csproj.AssemblyReference.cache
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.csproj.SuggestedBindingRedirects.cache
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.Form1.resources
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.Properties.Resources.resources
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.csproj.GenerateResource.cache
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.csproj.CoreCompileInputs.cache
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.exe
+C:\Users\SEKOLAH VOKASI\source\repos\P7_1_1214063\P7_1_1214063\obj\Debug\P7_1_1214063.pdb
