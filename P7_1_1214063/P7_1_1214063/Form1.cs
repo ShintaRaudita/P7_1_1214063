@@ -17,7 +17,7 @@ namespace P7_1_1214063
         public Form1()
         {
             InitializeComponent();
-            this.Size = new Size(660,330);
+            this.Size = new Size(660, 330);
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace P7_1_1214063
                                     "informsi data submit",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
-                              
+
                             }
                             else //smt
                             {
@@ -148,13 +148,21 @@ namespace P7_1_1214063
 
         private void tbSemester_TextChanged(object sender, EventArgs e)
         {
-
+            if ((tbSemester.Text).All(char.IsNumber))
+            {
+                epTA.SetError(tbSemester, "");
+            }
+            else
+            {
+                epTA.SetError(tbSemester, "Inputan semester hanya boleh angka!");
+            }
         }
 
         private void rbKuri2006_CheckedChanged(object sender, EventArgs e)
         {
             if (rbKuri2006.Checked)
             {
+                
                 cbMTK.Enabled = true;
                 cbPemrog1.Enabled = true;
                 cbPemrog2.Enabled = true;
@@ -203,27 +211,132 @@ namespace P7_1_1214063
             */
         }//end private void rbKuri2006_CheckedChanged(object sender, EventArgs e)
 
+       
         private void button1_Click(object sender, EventArgs e)
         {
+            string J_K = null;
+            if (rbLaki.Checked)
+            {
+                J_K = rbLaki.Text;
+            }
+            else
+            {
+                J_K = rbPerem.Text;
+            }
+
+            string kuri = null;
+            if (rbKuri2006.Checked)
+            {
+                kuri = rbKuri2006.Text;
+            }
+            else if (rbKuri2010.Checked)
+            {
+                kuri = rbKuri2010.Text;
+            }
+            else
+            {
+                kuri = rbKuri2014.Text;
+            }
+
+            string matkul = "";
+            if (cbMTK.Checked)
+            {
+                matkul += cbMTK.Text + ", ";
+            }
+            if (cbPemrog1.Checked)
+            {
+                matkul += cbPemrog1.Text + ", ";
+            }
+            if (cbPemrog2.Checked)
+            {
+                matkul += cbPemrog2.Text + ", ";
+            }
+            if (cbPemrog3.Checked)
+            {
+                matkul += cbPemrog3.Text + ", ";
+            }
+            if (cbPemrog4.Checked)
+            {
+                matkul += cbPemrog4.Text + ", ";
+            }
+            if (cbPemrog5.Checked)
+            {
+                matkul += cbPemrog5.Text + ", ";
+            }
+            if (cbPemrog6.Checked)
+            {
+                matkul += cbPemrog6.Text + ", ";
+            }
+            if (cbPemrog7.Checked)
+            {
+                matkul += cbPemrog7.Text + ", ";
+            }
+            if (cbPengLog.Checked)
+            {
+                matkul += cbPengLog.Text + ", ";
+            }
+            if (cbJarKom.Checked)
+            {
+                matkul += cbJarKom.Text + ", ";
+            }
+            if (cbSO.Checked)
+            {
+                matkul += cbSO.Text + ", ";
+            }
+            if (cbPasok.Checked)
+            {
+                matkul += cbPasok.Text;
+            }
+
+
+
             MessageBox.Show
                 (
                 "NIM : " + tbNIM.Text +
                 "\nNama : " + tbNama.Text +
-                "\nJenis Kelamin : " + 
+                "\nJenis Kelamin : " + J_K + 
                 "\nAlamat : " + tbAlamat.Text +
                 "\nProgram Studi : " + cbProdi.Text +
-                "\nTahun Akademik : " + tbTA +
-                "\nSemester : " + tbSemester +
+                "\nTahun Akademik : " + tbTA.Text +
+                "\nSemester : " + tbSemester.Text +
                 "\n=====================================" +
-                "\nKurikulum : " +
-                "\nMataKuliah : "
-                //MessageBoxButtons.OK, MessageBoxIcon.Information
+                "\nKurikulum : " + kuri + 
+                "\nMataKuliah : " + matkul,
+                "informsi data submit",
+                 MessageBoxButtons.OK, MessageBoxIcon.Information
                 );
         }
 
         private void btBatal_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //tbNIM.Clear();
+            tbNIM.Text = null;
+            tbNama.Text = null;
+            tbAlamat.Text = null;
+            rbLaki.Checked = false;
+            rbPerem.Checked = false;
+            tbAlamat.Text = null;
+            cbProdi.Text = null;
+            tbTA.Text = null;
+            tbSemester.Text = null;
+            rbKuri2006.Checked = false;
+            rbKuri2010.Checked = false;
+            rbKuri2014.Checked = false;
+            cbMTK.Checked = false;
+            cbPemrog1.Checked = false;
+            cbPemrog2.Checked = false;
+            cbPemrog3.Checked = false;
+            cbPemrog4.Checked = false;
+            cbPemrog5.Checked = false;
+            cbPemrog6.Checked = false;
+            cbPemrog7.Checked = false;
+            cbPengLog.Checked = false;
+            cbJarKom.Checked = false;
+            cbSO.Checked = false;
+            cbPasok.Checked = false;
+
+            this.Size = new Size(660, 330);
+
         }
 
         private void rbKuri2010_CheckedChanged(object sender, EventArgs e)
